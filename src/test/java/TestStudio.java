@@ -24,7 +24,7 @@ public class TestStudio {
 
     @Test
     public void canSave() {
-        Studio found = DBHelper.find(studio);
+        Studio found = DBHelper.find(Studio.class, studio.getId());
         assertEquals("Wowsers Pictures", found.getName());
     }
 
