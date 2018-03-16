@@ -1,7 +1,10 @@
 package models;
 
+import javax.persistence.*;
 import java.util.Set;
 
+@Entity
+@Table(name="directors")
 public class Director {
 
     private int id;
@@ -15,6 +18,9 @@ public class Director {
         this.name = name;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -23,6 +29,7 @@ public class Director {
         this.id = id;
     }
 
+    @Column(name="name")
     public String getName() {
         return name;
     }
@@ -31,6 +38,7 @@ public class Director {
         this.name = name;
     }
 
+    @OneToMany(mappedBy = "director", fetch = FetchType.EAGER)
     public Set<Film> getFilms() {
         return films;
     }
