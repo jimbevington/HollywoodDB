@@ -1,7 +1,10 @@
 package models;
 
+import javax.persistence.*;
 import java.util.Set;
 
+@Entity
+@Table(name="films")
 public class Film {
 
     private int id;
@@ -22,6 +25,9 @@ public class Film {
         this.actors = actors;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -30,6 +36,7 @@ public class Film {
         this.id = id;
     }
 
+    @Column(name="title")
     public String getTitle() {
         return title;
     }
@@ -38,6 +45,7 @@ public class Film {
         this.title = title;
     }
 
+    @Column(name="year")
     public int getYear() {
         return year;
     }
@@ -46,6 +54,8 @@ public class Film {
         this.year = year;
     }
 
+    @ManyToOne
+    @JoinColumn(name="studio", nullable = false)
     public Studio getStudio() {
         return studio;
     }
@@ -54,6 +64,8 @@ public class Film {
         this.studio = studio;
     }
 
+    @ManyToOne
+    @JoinColumn(name="director", nullable = false)
     public Director getDirector() {
         return director;
     }
@@ -62,6 +74,10 @@ public class Film {
         this.director = director;
     }
 
+    @ManyToMany
+    @JoinTable(name="actors_films",
+                joinColumns = {@JoinColumn(name="actor_id", nullable = false, updatable = false)},
+                inverseJoinColumns = {@JoinColumn(name="film_id", nullable = false, updatable = false)})
     public Set<Actor> getActors() {
         return actors;
     }
