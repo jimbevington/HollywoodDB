@@ -19,7 +19,7 @@ public class TestStudio {
     @Before
     public void setUp() throws Exception {
         studio = new Studio("Wowsers Pictures");
-        DBHelper.save(studio);
+        DBHelper.saveOrUpdate(studio);
     }
 
     @Test
