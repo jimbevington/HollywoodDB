@@ -1,8 +1,11 @@
+import db.DBHelper;
 import models.Studio;
 import org.hibernate.dialect.DB2Dialect;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TestStudio {
 
@@ -16,6 +19,7 @@ public class TestStudio {
     @Before
     public void setUp() throws Exception {
         studio = new Studio("Wowsers Pictures");
+        DBHelper.save(studio);
     }
 
     @Test
