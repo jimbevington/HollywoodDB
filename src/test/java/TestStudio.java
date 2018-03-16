@@ -31,7 +31,6 @@ public class TestStudio {
         assertEquals("Wowsers Pictures", found.getName());
     }
 
-//    can update
 
     @Test
     public void canUpdate() {
@@ -46,4 +45,16 @@ public class TestStudio {
         assertEquals(1, foundStudios.size());
     }
 
+    @Test
+    public void canDelete() {
+        Studio studio2 = new Studio("Bad Films");
+        DBHelper.saveOrUpdate(studio2);
+        DBHelper.delete(studio2);
+//        get all Studios back and test only 1 after deletion
+        List<Studio> studios = DBHelper.getAll(Studio.class);
+        assertEquals(1, studios.size());
+//        get Studio out of list and test its not the deleted one
+        Studio foundStudio = studios.get(0);
+        assertEquals(studio.getId(), foundStudio.getId());
+    }
 }
