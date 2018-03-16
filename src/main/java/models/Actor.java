@@ -1,8 +1,11 @@
 package models;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name="actors")
 public class Actor {
 
     private int id;
@@ -16,6 +19,9 @@ public class Actor {
         this.name = name;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     public int getId() {
         return id;
     }
@@ -24,6 +30,7 @@ public class Actor {
         this.id = id;
     }
 
+    @Column(name="name")
     public String getName() {
         return name;
     }
@@ -32,6 +39,7 @@ public class Actor {
         this.name = name;
     }
 
+    @ManyToMany(mappedBy = "actors", fetch = FetchType.EAGER)
     public Set<Film> getFilms() {
         return films;
     }
