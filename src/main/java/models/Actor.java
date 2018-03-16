@@ -1,17 +1,18 @@
 package models;
 
+import java.util.HashSet;
 import java.util.Set;
 
-public class Studio {
+public class Actor {
 
     private int id;
     private String name;
     private Set<Film> films;
 
-    public Studio() {
+    public Actor() {
     }
 
-    public Studio(String name) {
+    public Actor(String name) {
         this.name = name;
     }
 

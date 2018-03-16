@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Set;
+
 public class Film {
 
     private int id;
