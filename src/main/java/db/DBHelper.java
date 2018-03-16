@@ -1,5 +1,6 @@
 package db;
 
+import models.Director;
 import models.Film;
 import models.Studio;
 import org.hibernate.Criteria;
@@ -56,10 +57,23 @@ public class DBHelper {
         session = HibernateUtil.getSessionFactory().openSession();
         List<T> results = null;
         Criteria criteria = session.createCriteria(classType);
-        criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);   // remove duplicates
         results = getList(criteria);
         return results;
     }
+
+    //    get Films of a Director, Studio or Actor
+//    do individually, then do one for all3
+
+    public static List<Film> getFilmsByDirector(Director director){
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Film> films = null;
+        Criteria criteria = session.createCriteria(Film.class);
+        criteria.add(Restrictions.eq("director", director));
+        films = getList(criteria);
+        return films;
+    }
+//    get Actors in a Film
+//    all films of a year
 
     public static <T> T getUnique(Criteria criteria){
         T result = null;
@@ -77,6 +91,7 @@ public class DBHelper {
     }
 
     public static <T> List<T> getList(Criteria criteria){
+        criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);   // remove duplicates
         List<T> results = null;
         try {
             transaction = session.beginTransaction();
@@ -91,12 +106,6 @@ public class DBHelper {
         return results;
     }
 
-
-//    adding Actors to Films;
-
-//    get Films of a Director, Studio or Actor
-//    get Actors in a Film
-//    all films of a year
 
 
 }

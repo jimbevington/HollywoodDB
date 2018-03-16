@@ -54,5 +54,7 @@ public class Runner {
         List<Director> allDirectors = DBHelper.getAll(Director.class);
         List<Studio> allStudios = DBHelper.getAll(Studio.class);
 
+        List<Film> filmsByDirector1 = DBHelper.getFilmsByDirector(director1);
+
     }
 }
