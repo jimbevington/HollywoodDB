@@ -1,5 +1,7 @@
 package db;
 
+import models.Film;
+import models.Studio;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -50,10 +52,13 @@ public class DBHelper {
         return result;
     }
 
-//    find
-//    getAll
-//    getList
-//    getUnique
+    public static <T> List<T> getAll(Class classType){
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<T> results = null;
+        Criteria criteria = session.createCriteria(classType);
+        results = getList(criteria);
+        return results;
+    }
 
     public static <T> T getUnique(Criteria criteria){
         T result = null;
@@ -84,6 +89,9 @@ public class DBHelper {
         }
         return results;
     }
+
+
+//    adding Actors to Films;
 
 //    get Films of a Director, Studio or Actor
 //    get Actors in a Film

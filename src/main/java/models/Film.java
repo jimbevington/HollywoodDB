@@ -1,6 +1,7 @@
 package models;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -17,12 +18,12 @@ public class Film {
     public Film() {
     }
 
-    public Film(String title, int year, Studio studio, Director director, Set<Actor> actors) {
+    public Film(String title, int year, Studio studio, Director director) {
         this.title = title;
         this.year = year;
         this.studio = studio;
         this.director = director;
-        this.actors = actors;
+        this.actors = new HashSet<Actor>();
     }
 
     @Id

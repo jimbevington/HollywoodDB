@@ -17,6 +17,7 @@ public class Actor {
 
     public Actor(String name) {
         this.name = name;
+        this.films = new HashSet<Film>();
     }
 
     @Id
