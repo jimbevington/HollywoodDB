@@ -18,12 +18,12 @@ public class Film {
     public Film() {
     }
 
-    public Film(String title, int year, Studio studio, Director director) {
+    public Film(String title, int year, Studio studio, Director director, Set<Actor> actors) {
         this.title = title;
         this.year = year;
         this.studio = studio;
         this.director = director;
-        this.actors = new HashSet<Actor>();
+        this.actors = actors;
     }
 
     @Id

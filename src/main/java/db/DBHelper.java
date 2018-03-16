@@ -56,6 +56,7 @@ public class DBHelper {
         session = HibernateUtil.getSessionFactory().openSession();
         List<T> results = null;
         Criteria criteria = session.createCriteria(classType);
+        criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);   // remove duplicates
         results = getList(criteria);
         return results;
     }
