@@ -75,7 +75,7 @@ public class Film {
         this.director = director;
     }
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="actors_films",
                 joinColumns = {@JoinColumn(name="actor_id", nullable = false, updatable = false)},
                 inverseJoinColumns = {@JoinColumn(name="film_id", nullable = false, updatable = false)})

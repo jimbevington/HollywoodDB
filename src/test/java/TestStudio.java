@@ -38,14 +38,12 @@ public class TestStudio {
         Studio found = DBHelper.find(Studio.class, studio.getId());
         found.setName("Times Up presents ...");
         DBHelper.saveOrUpdate(found);
+//        get Film back and check name has been updated
         found = DBHelper.find(Studio.class, studio.getId());
         assertEquals("Times Up presents ...", found.getName());
-        List<Studio> foundFilms = DBHelper.getAll(Film.class);
-        assertEquals(1, foundFilms.size());
+//        get All Films and check there's still only 1
+        List<Studio> foundStudios = DBHelper.getAll(Studio.class);
+        assertEquals(1, foundStudios.size());
     }
 
-
-//    can delete
-
-//    can get all
 }
