@@ -48,4 +48,8 @@ public class Actor {
     public void setFilms(Set<Film> films) {
         this.films = films;
     }
+
+    public void addFilm(Film film){
+        this.films.add(film);
+    }
 }

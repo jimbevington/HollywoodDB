@@ -84,8 +84,17 @@ public class DBHelper {
         return films;
     }
 
+    public static void addActorToFilm(Actor actor, Film film){
+        actor.addFilm(film);
+        film.addActor(actor);
+        saveOrUpdate(actor);
+        saveOrUpdate(film);
+    }
+
 
 //    get Actors in a Film
+
+
 //    all films of a year
 
     public static <T> T getUnique(Criteria criteria){

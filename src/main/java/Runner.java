@@ -1,3 +1,4 @@
+import antlr.DocBookCodeGenerator;
 import db.DBHelper;
 import models.Actor;
 import models.Director;
@@ -49,15 +50,6 @@ public class Runner {
         foundStudio.setName("AAAF inc");
         DBHelper.saveOrUpdate(foundStudio);
 
-//        test DELETE
-//          have to delete Films first before you can delete Director, Studio or Actors
-//        how to get round this
-
-//        DBHelper.delete(foundActor);
-//        DBHelper.delete(foundFilm);
-//        DBHelper.delete(foundDirector);
-//        DBHelper.delete(foundStudio);
-
         List<Film> allFilms = DBHelper.getAll(Film.class);
         List<Actor> allActors = DBHelper.getAll(Actor.class);
         List<Director> allDirectors = DBHelper.getAll(Director.class);
@@ -70,6 +62,20 @@ public class Runner {
 //          problem thrown up by Actors
         List<Film> filmsByFieldDirector = DBHelper.getFilmsByField("director", director1);
         List<Film> filmsByFieldStudio = DBHelper.getFilmsByField("studio", studio1);
+
+//        test ADD ACTOR TO FILM
+        DBHelper.addActorToFilm(foundActor, foundFilm);
+        foundFilm = DBHelper.find(Film.class, film1.getId());
+        foundActor = DBHelper.find(Actor.class, actor1.getId());
+
+        //        test DELETE
+//          have to delete Films first before you can delete Director, Studio or Actors
+//        how to get round this
+
+//        DBHelper.delete(foundActor);
+//        DBHelper.delete(foundFilm);
+//        DBHelper.delete(foundDirector);
+//        DBHelper.delete(foundStudio);
 
     }
 }

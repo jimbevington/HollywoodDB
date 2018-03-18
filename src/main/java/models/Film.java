@@ -86,4 +86,8 @@ public class Film {
     public void setActors(Set<Actor> actors) {
         this.actors = actors;
     }
+
+    public void addActor(Actor actor){
+        this.actors.add(actor);
+    }
 }
