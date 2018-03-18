@@ -10,6 +10,7 @@ public class Actor {
 
     private int id;
     private String name;
+    private int cash;
     private Set<Film> films;
 
     public Actor() {
@@ -17,6 +18,7 @@ public class Actor {
 
     public Actor(String name) {
         this.name = name;
+        this.cash = 0;
         this.films = new HashSet<Film>();
     }
 
@@ -40,6 +42,15 @@ public class Actor {
         this.name = name;
     }
 
+    @Column(name="cash")
+    public int getCash() {
+        return cash;
+    }
+
+    public void setCash(int cash) {
+        this.cash = cash;
+    }
+
     @ManyToMany(mappedBy = "actors", fetch = FetchType.EAGER)
     public Set<Film> getFilms() {
         return films;
@@ -51,5 +62,9 @@ public class Actor {
 
     public void addFilm(Film film){
         this.films.add(film);
+    }
+
+    public void increaseCash(int amount){
+        this.cash += amount;
     }
 }
