@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestFilmDB {
+public class TestActorDB {
 
     private Actor actor;
     private Studio studio;
@@ -39,16 +39,14 @@ public class TestFilmDB {
     @Test
     public void canAddActorToFilm() {
         DBHelper.addActorToFilm(actor, film);
-        Film foundFilm = DBHelper.find(Film.class, film.getId());
         Actor foundActor = DBHelper.find(Actor.class, actor.getId());
-        assertEquals(1, foundFilm.getActors().size());
         assertEquals(1, foundActor.getFilms().size());
     }
 
     @Test
-    public void canReduceBudget() {
+    public void canIncreaseCash() {
         DBHelper.payEmployee(actor, film, 10000);
-        Film foundFilm = DBHelper.find(Film.class, film.getId());
-        assertEquals(990000, foundFilm.getBudget());
+        Actor foundActor = DBHelper.find(Actor.class, actor.getId());
+        assertEquals(10000, foundActor.getCash());
     }
 }
