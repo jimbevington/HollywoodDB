@@ -91,6 +91,13 @@ public class DBHelper {
         saveOrUpdate(film);
     }
 
+    public static void payActor(Actor actor, Film film, int amount){
+        actor.increaseCash(amount);
+        film.decreaseBudget(amount);
+        saveOrUpdate(actor);
+        saveOrUpdate(film);
+    }
+
 
 //    get Actors in a Film
 

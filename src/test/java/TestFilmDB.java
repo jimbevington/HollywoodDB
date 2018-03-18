@@ -44,4 +44,11 @@ public class TestFilmDB {
         assertEquals(1, foundFilm.getActors().size());
         assertEquals(1, foundActor.getFilms().size());
     }
+
+    @Test
+    public void canReduceBudget() {
+        DBHelper.payActor(actor, film, 10000);
+        Film foundFilm = DBHelper.find(Film.class, film.getId());
+        assertEquals(990000, foundFilm.getBudget());
+    }
 }
