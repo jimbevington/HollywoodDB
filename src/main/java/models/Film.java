@@ -18,12 +18,12 @@ public class Film {
     public Film() {
     }
 
-    public Film(String title, int year, Studio studio, Director director, Set<Actor> actors) {
+    public Film(String title, int year, Studio studio, Director director) {
         this.title = title;
         this.year = year;
         this.studio = studio;
         this.director = director;
-        this.actors = actors;
+        this.actors = new HashSet<Actor>();
     }
 
     @Id
@@ -75,7 +75,7 @@ public class Film {
         this.director = director;
     }
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany (fetch = FetchType.EAGER)
     @JoinTable(name="actors_films",
                 joinColumns = {@JoinColumn(name="actor_id", nullable = false, updatable = false)},
                 inverseJoinColumns = {@JoinColumn(name="film_id", nullable = false, updatable = false)})

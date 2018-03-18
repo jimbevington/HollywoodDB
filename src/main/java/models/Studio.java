@@ -39,7 +39,7 @@ public class Studio {
         this.name = name;
     }
 
-    @OneToMany(mappedBy = "studio", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "studio", fetch = FetchType.LAZY)
     public Set<Film> getFilms() {
         return films;
     }

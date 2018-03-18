@@ -1,5 +1,6 @@
 package db;
 
+import models.Actor;
 import models.Director;
 import models.Film;
 import models.Studio;
@@ -72,6 +73,18 @@ public class DBHelper {
         films = getList(criteria);
         return films;
     }
+
+//  get films by field
+    public static List<Film> getFilmsByField(String fieldname, Object object){
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Film> films = null;
+        Criteria criteria = session.createCriteria(Film.class);
+        criteria.add(Restrictions.eq(fieldname, object));
+        films = getList(criteria);
+        return films;
+    }
+
+
 //    get Actors in a Film
 //    all films of a year
 
