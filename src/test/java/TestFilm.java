@@ -11,39 +11,20 @@ import static org.junit.Assert.assertEquals;
 
 public class TestFilm {
 
-    private Actor actor;
     private Studio studio;
     private Director director;
     private Film film;
 
-    @After
-    public void tearDown() throws Exception {
-        DBHelper.delete(film);
-        DBHelper.delete(director);
-        DBHelper.delete(actor);
-        DBHelper.delete(studio);
-    }
-
     @Before
     public void setUp() throws Exception {
-        Actor actor = new Actor("Peter Sellers");
-        DBHelper.saveOrUpdate(actor);
-        Studio studio = new Studio("MGM");
-        DBHelper.saveOrUpdate(studio);
-        Director director = new Director("Blake Edwards");
-        DBHelper.saveOrUpdate(director);
-        Film film = new Film("A Shot In The Dark", 1964, 1000000, studio, director);
-        DBHelper.saveOrUpdate(film);
+        film = new Film("A Shot In The Dark", 1964, 1000000, studio, director);
     }
 
-//    @Test
-//    public void canAddActorToFilm() {
-//        Film foundFilm = DBHelper.find(Film.class, film.getId());
-//        Actor foundActor = DBHelper.find(Actor.class, actor.getId());
-//        DBHelper.addActorToFilm(foundActor, foundFilm);
-//        foundFilm = DBHelper.find(Film.class, film.getId());
-//        foundActor = DBHelper.find(Actor.class, actor.getId());
-////        assertEquals(1, foundFilm.getActors().size());
-////        assertEquals(1, foundActor.getFilms().size());
-//    }
+    @Test
+    public void canReduceBudget() {
+        film.decreaseBudget(500000);
+        assertEquals(500000, film.getBudget());
+    }
+
+
 }

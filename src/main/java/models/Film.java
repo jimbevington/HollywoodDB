@@ -101,4 +101,8 @@ public class Film {
     public void addActor(Actor actor){
         this.actors.add(actor);
     }
+
+    public void decreaseBudget(int amount){
+        this.budget -= amount;
+    }
 }
