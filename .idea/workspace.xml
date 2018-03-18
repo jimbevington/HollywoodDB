@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a104533b-f7bc-467b-8f1d-747bbb5c05ae" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestActor.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestFilm.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" afterPath="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Actor.java" afterPath="$PROJECT_DIR$/src/main/java/models/Actor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Film.java" afterPath="$PROJECT_DIR$/src/main/java/models/Film.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Runner.class" afterPath="$PROJECT_DIR$/target/classes/Runner.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestActor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestFilm.class" afterPath="$PROJECT_DIR$/target/test-classes/TestFilm.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="TestStudio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestStudio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="408">
               <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,38 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestFilm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestFilm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Film.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="466">
+              <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
               <folding>
-                <element signature="e#1907#1908#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-                <element signature="e#2025#2026#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestActor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestActor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#2136#2137#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2212#2213#0" expanded="true" />
+                <element signature="e#2250#2251#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,9 +71,12 @@
       <file leaf-file-name="Studio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="41" column="58" lean-forward="false" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,8 +84,8 @@
       <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="320">
+              <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,11 +93,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+            <state relative-caret-position="-178">
+              <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFilm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestFilm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,12 +144,12 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Director.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestStudio.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Studio.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestFilm.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Actor.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestActor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/Film.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Film.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestFilm.java" />
       </list>
     </option>
   </component>
@@ -248,13 +245,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HollywoodDatabase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HollywoodDatabase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -330,6 +320,46 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestFilm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HollywoodDatabase" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestFilm" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestFilm.canAddActorToFilm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HollywoodDatabase" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestFilm" />
+      <option name="METHOD_NAME" value="canAddActorToFilm" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -421,16 +451,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in HollywoodDatabase" />
       <item index="1" class="java.lang.String" itemvalue="Application.Runner" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestStudio" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFilm" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFilm.canAddActorToFilm" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in HollywoodDatabase" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestStudio" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFilm.canAddActorToFilm" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in HollywoodDatabase" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestStudio" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFilm" />
       </list>
     </recent_temporary>
   </component>
@@ -451,34 +485,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 07m 27s.xml">
-      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 08m 20s.xml">
-      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 09m 43s.xml">
       <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 12h 09m 54s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 23m 22s.xml">
+      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 12h 11m 03s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 24m 08s.xml">
+      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 12h 11m 51s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 24m 34s.xml">
+      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 12h 12m 03s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 25m 46s.xml">
+      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 12h 16m 47s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="All_in_HollywoodDatabase - 2018.03.18 at 20h 27m 28s.xml">
+      <configuration name="All in HollywoodDatabase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.16 at 15h 28m 23s.xml">
-      <configuration name="TestStudio" configurationId="JUnit" />
+    <history-entry file="TestFilm - 2018.03.18 at 20h 26m 06s.xml">
+      <configuration name="TestFilm" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudio - 2018.03.18 at 11h 07m 25s.xml">
+    <history-entry file="TestFilm_canAddActorToFilm - 2018.03.18 at 20h 27m 40s.xml">
+      <configuration name="TestFilm.canAddActorToFilm" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFilm_canAddActorToFilm - 2018.03.18 at 20h 28m 10s.xml">
+      <configuration name="TestFilm.canAddActorToFilm" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStudio - 2018.03.18 at 20h 26m 20s.xml">
       <configuration name="TestStudio" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -488,7 +522,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -504,7 +538,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5072464" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -550,7 +584,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>78</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -740,8 +774,8 @@
         <state relative-caret-position="935">
           <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,8 +845,8 @@
         <state relative-caret-position="935">
           <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -882,8 +916,8 @@
         <state relative-caret-position="935">
           <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1152,38 +1186,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="58" lean-forward="false" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestStudio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestFilm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1199,33 +1205,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestStudio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Studio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2212#2213#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="76" column="64" lean-forward="false" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+        <state relative-caret-position="-178">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestFilm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

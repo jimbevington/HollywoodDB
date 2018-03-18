@@ -27,10 +27,10 @@ public class Runner {
         DBHelper.saveOrUpdate(actor3);
 
 
-        Film film1 = new Film("I Married My Gun", 2018, studio1, director1);
+        Film film1 = new Film("I Married My Gun", 2018, 5000000, studio1, director1);
         DBHelper.saveOrUpdate(film1);
 
-        Film film2 = new Film("Dancing with Databases", 1976, studio1, director2);
+        Film film2 = new Film("Dancing with Databases", 1976, 1000000, studio1, director2);
         DBHelper.saveOrUpdate(film2);
 
 

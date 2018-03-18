@@ -11,6 +11,7 @@ public class Film {
     private int id;
     private String title;
     private int year;
+    private int budget;
     private Studio studio;
     private Director director;
     private Set<Actor> actors;
@@ -18,9 +19,10 @@ public class Film {
     public Film() {
     }
 
-    public Film(String title, int year, Studio studio, Director director) {
+    public Film(String title, int year, int budget, Studio studio, Director director) {
         this.title = title;
         this.year = year;
+        this.budget = budget;
         this.studio = studio;
         this.director = director;
         this.actors = new HashSet<Actor>();
@@ -53,6 +55,15 @@ public class Film {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    @Column(name="budget")
+    public int getBudget() {
+        return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
     }
 
     @ManyToOne
