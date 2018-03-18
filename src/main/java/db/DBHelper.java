@@ -5,6 +5,8 @@ import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Projection;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
@@ -95,11 +97,20 @@ public class DBHelper {
         saveOrUpdate(film);
     }
 
+    public static List<Film> getFilmsByActor(int actorId){
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Film> films = null;
+        Criteria criteria = session.createCriteria(Film.class);
+        criteria.add(Restrictions.eq("actor_id", actorId));
+        films = getList(criteria);
+        return films;
+    }
 
+//    number of Films an Actor has done
+//    number of Films an actor has done by Genre
 //    get Actors in a Film
-
-
 //    all films of a year
+
 
     public static <T> T getUnique(Criteria criteria){
         T result = null;
@@ -131,7 +142,5 @@ public class DBHelper {
         }
         return results;
     }
-
-
 
 }

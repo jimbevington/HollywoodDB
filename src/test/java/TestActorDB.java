@@ -49,4 +49,13 @@ public class TestActorDB {
         Actor foundActor = DBHelper.find(Actor.class, actor.getId());
         assertEquals(10000, foundActor.getCash());
     }
+
+//    @Test
+//    public void canGetNumOfFilmsByGenre() {
+//        int numFilms = DBHelper.countFilmsByGenre(actor, "Comedy");
+//        assertEquals(0, numFilms);
+//        DBHelper.addActorToFilm(actor, film);
+//        numFilms = DBHelper.countFilmsByGenre(actor, "Comedy");
+//        assertEquals(1, numFilms);
+//    }
 }

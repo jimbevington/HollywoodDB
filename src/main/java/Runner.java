@@ -68,7 +68,10 @@ public class Runner {
         foundFilm = DBHelper.find(Film.class, film1.getId());
         foundActor = DBHelper.find(Actor.class, actor1.getId());
 
-        //        test DELETE
+
+
+
+//        test DELETE
 //          have to delete Films first before you can delete Director, Studio or Actors
 //        how to get round this
 
@@ -76,6 +79,9 @@ public class Runner {
 //        DBHelper.delete(foundFilm);
 //        DBHelper.delete(foundDirector);
 //        DBHelper.delete(foundStudio);
+
+//        test GET ACTORS FILMS
+        List<Film> foundActorsFilms = DBHelper.getFilmsByActor(foundActor.getId());
 
     }
 }
