@@ -17,7 +17,7 @@ public class TestDirectorDB {
     public void setUp() throws Exception {
         studio = new Studio("Technicolour Travesties");
         director = new Director("Bong Joon-Ho");
-        film = new Film("Cage Flipper", 1967, 400000, studio, director);
+        film = new Film("Cage Flipper", 1967, 400000, "Wildlife", studio, director);
     }
 
     @Test

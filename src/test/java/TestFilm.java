@@ -17,7 +17,7 @@ public class TestFilm {
 
     @Before
     public void setUp() throws Exception {
-        film = new Film("A Shot In The Dark", 1964, 1000000, studio, director);
+        film = new Film("A Shot In The Dark", 1964, 1000000, "Comedy", studio, director);
     }
 
     @Test

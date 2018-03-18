@@ -7,8 +7,6 @@ import java.util.Set;
 @Table(name="directors")
 public class Director extends Employee{
 
-//    private int id;
-//    private String name;
     private Set<Film> films;
 
     public Director() {
@@ -17,26 +15,6 @@ public class Director extends Employee{
     public Director(String name) {
         super(name);
     }
-
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name="id")
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public void setId(int id) {
-//        this.id = id;
-//    }
-//
-//    @Column(name="name")
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
 
     @OneToMany(mappedBy = "director", fetch = FetchType.EAGER)
     public Set<Film> getFilms() {

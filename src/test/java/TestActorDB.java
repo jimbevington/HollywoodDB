@@ -32,7 +32,7 @@ public class TestActorDB {
         DBHelper.saveOrUpdate(studio);
         director = new Director("Blake Edwards");
         DBHelper.saveOrUpdate(director);
-        film = new Film("A Shot In The Dark", 1964, 1000000, studio, director);
+        film = new Film("A Shot In The Dark", 1964, 1000000, "Comedy", studio, director);
         DBHelper.saveOrUpdate(film);
     }
 
