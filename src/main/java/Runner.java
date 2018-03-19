@@ -81,7 +81,9 @@ public class Runner {
 //        DBHelper.delete(foundStudio);
 
 //        test GET ACTORS FILMS
-        List<Film> foundActorsFilms = DBHelper.getFilmsByActor(foundActor.getId());
+        DBHelper.addActorToFilm(actor1, film2);
+        int countFarce = DBHelper.countActorFilmsByGenre(actor1, "Farce");
 
+        List<Film> filmsOfGenre = DBHelper.getFilmsByGenre("Farce");
     }
 }

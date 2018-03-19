@@ -97,13 +97,30 @@ public class DBHelper {
         saveOrUpdate(film);
     }
 
-    public static List<Film> getFilmsByActor(int actorId){
+    public static List<Film> getFilmsByGenre(String genre){
         session = HibernateUtil.getSessionFactory().openSession();
-        List<Film> films = null;
+        List<Film> results = null;
         Criteria criteria = session.createCriteria(Film.class);
-        criteria.add(Restrictions.eq("actor_id", actorId));
-        films = getList(criteria);
-        return films;
+        criteria.add(Restrictions.eq("genre", genre));
+        results = getList(criteria);
+        return results;
+    }
+
+    public static int countActorFilmsByGenre(Actor actor, String genre){
+//        get all the films of the genre
+        List<Film> films = getFilmsByGenre(genre);
+        int total = 0;
+//        loop through all the Genre films
+        for (Film film : films) {
+//            loop through each Films Actors
+            for (Actor a : film.getActors()){
+//                if the specified Actor is present, increment the total.
+                   if (a.getId() == actor.getId()){
+                       total += 1;
+                   }
+            }
+        }
+        return total;
     }
 
 //    number of Films an Actor has done
