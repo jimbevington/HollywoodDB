@@ -9,6 +9,7 @@ import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DBHelper {
@@ -43,6 +44,13 @@ public class DBHelper {
             session.close();
         }
     }
+
+//    problem: if deleting an actor, i can't without deleting the film first
+//    and vice versa
+
+//    public static void deleteActor(Actor actor){
+//
+//    }
 
     public static <T> T find(Class classType, int id){
         session = HibernateUtil.getSessionFactory().openSession();
@@ -106,6 +114,26 @@ public class DBHelper {
         return results;
     }
 
+//    get Actors in a Film
+//    all films of a year
+
+
+
+    public static List<Film> getFilmsByActor(Actor actor){
+        List<Film> films = getAll(Film.class);
+        List<Film> results = new ArrayList<Film>();
+        for (Film film : films){
+            for (Actor a : film.getActors()){
+                if (a.getId() == actor.getId()){
+                    results.add(film);
+                }
+            }
+        }
+        return results;
+    }
+
+
+    //      refactor this to use a complex HQL command
     public static int countActorFilmsByGenre(Actor actor, String genre){
 //        get all the films of the genre
         List<Film> films = getFilmsByGenre(genre);
@@ -115,7 +143,7 @@ public class DBHelper {
 //            loop through each Films Actors
             for (Actor a : film.getActors()){
 //                if the specified Actor is present, increment the total.
-                   if (a.getId() == actor.getId()){
+                if (a.getId() == actor.getId()){
                        total += 1;
                    }
             }
@@ -123,10 +151,8 @@ public class DBHelper {
         return total;
     }
 
-//    number of Films an Actor has done
-//    number of Films an actor has done by Genre
-//    get Actors in a Film
-//    all films of a year
+
+
 
 
     public static <T> T getUnique(Criteria criteria){

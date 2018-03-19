@@ -85,5 +85,8 @@ public class Runner {
         int countFarce = DBHelper.countActorFilmsByGenre(actor1, "Farce");
 
         List<Film> filmsOfGenre = DBHelper.getFilmsByGenre("Farce");
+
+        List<Film> filmsWithActor = DBHelper.getFilmsByActor(actor1);
+
     }
 }
