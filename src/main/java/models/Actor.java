@@ -31,4 +31,13 @@ public class Actor extends Employee {
         this.films.add(film);
     }
 
+    public void removeFilm(Film film){
+//        choose to remove the film by matching Film IDs, rather than object
+        for (Film f : this.films){
+            if (f.getId() == film.getId()){
+                this.films.remove(f);
+            }
+        }
+    }
+
 }

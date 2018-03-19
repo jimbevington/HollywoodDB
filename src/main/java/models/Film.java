@@ -113,6 +113,15 @@ public class Film {
         this.actors.add(actor);
     }
 
+    public void removeActor(Actor actor){
+//        choose to remove the actor by matching Actor IDs, rather than object
+        for (Actor a : this.actors){
+            if (a.getId() == actor.getId()){
+                this.actors.remove(a);
+            }
+        }
+    }
+
     public void decreaseBudget(int amount){
         this.budget -= amount;
     }
